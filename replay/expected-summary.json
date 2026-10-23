@@ -1,0 +1,159 @@
+{
+  "status": "COMPLETE_ALL160_M77_SLOTS",
+  "snapshot_at_utc": "2026-10-15T00:44:07.096996+00:00",
+  "cohort_cases": 40,
+  "observed_slots": 160,
+  "NOT_RUN_slots": 0,
+  "inherited_M75_main_macro_slots": 40,
+  "new_M77_slots": 120,
+  "slot_dispositions": {
+    "ACCEPT": 78,
+    "REJECT": 73,
+    "ABSTAIN": 6,
+    "FAILED": 3
+  },
+  "runtime_statuses": {
+    "SUCCESS": 157,
+    "FAILED": 3
+  },
+  "known_response_tokens": 83450,
+  "genuine_unknown_usage_slots": 3,
+  "complete_B2_P_pairs": 40,
+  "conditions": {
+    "B1": {
+      "ACCEPT": 19,
+      "REJECT": 19,
+      "ABSTAIN": 2
+    },
+    "B2": {
+      "ACCEPT": 59,
+      "REJECT": 54,
+      "ABSTAIN": 4,
+      "FAILED": 3
+    },
+    "B2_paired_verdicts": {
+      "ACCEPT": 21,
+      "REJECT": 18,
+      "ABSTAIN": 1
+    },
+    "P_paired_verdicts": {
+      "ACCEPT": 10,
+      "REJECT": 22,
+      "ABSTAIN": 8
+    }
+  },
+  "P_extra_calls": 0,
+  "actual_cost_usd": null,
+  "billing_reconciled": false,
+  "three_roles_one_model": true,
+  "model_diversity_claim": false,
+  "prior_M73_calls_promoted": 0,
+  "final_statistics": {
+    "status": "COMPLETE_FIXED40_CASE_SYNTHETIC_ANALYSIS",
+    "paired_case_count": 40,
+    "unknown_action_pairs": 5,
+    "P_minus_B2_effect_identification_bounds": [
+      -0.275,
+      -0.15
+    ],
+    "95percent_fixed_variation_block_bootstrap_envelope": [
+      -0.4,
+      -0.05
+    ],
+    "McNemar_exact_IID_sensitivity_only": {
+      "discordance_B2_false_P_true": 0,
+      "discordance_B2_true_P_false": 6,
+      "two_sided_p": 0.03125,
+      "known_pair_count": 35
+    },
+    "no_market_or_full400_population_inference": true,
+    "repetition_instability_estimated": false,
+    "fixed_cyclic_not_random_sample": true
+  },
+  "four_holdout_folds": {
+    "0": {
+      "planned": 10,
+      "complete_pairs": 10,
+      "B2": {
+        "ACCEPT": 6,
+        "REJECT": 4
+      },
+      "P": {
+        "ACCEPT": 4,
+        "REJECT": 5,
+        "ABSTAIN": 1
+      }
+    },
+    "1": {
+      "planned": 10,
+      "complete_pairs": 10,
+      "B2": {
+        "REJECT": 5,
+        "ACCEPT": 5
+      },
+      "P": {
+        "REJECT": 6,
+        "ABSTAIN": 2,
+        "ACCEPT": 2
+      }
+    },
+    "2": {
+      "planned": 10,
+      "complete_pairs": 10,
+      "B2": {
+        "ACCEPT": 6,
+        "REJECT": 4
+      },
+      "P": {
+        "ACCEPT": 3,
+        "REJECT": 5,
+        "ABSTAIN": 2
+      }
+    },
+    "3": {
+      "planned": 10,
+      "complete_pairs": 10,
+      "B2": {
+        "REJECT": 5,
+        "ACCEPT": 4,
+        "ABSTAIN": 1
+      },
+      "P": {
+        "REJECT": 6,
+        "ABSTAIN": 3,
+        "ACCEPT": 1
+      }
+    }
+  },
+  "guard_sensitivity": {
+    "1": {
+      "REJECT": 32,
+      "ABSTAIN": 8
+    },
+    "2": {
+      "ACCEPT": 10,
+      "REJECT": 22,
+      "ABSTAIN": 8
+    },
+    "3": {
+      "ACCEPT": 10,
+      "REJECT": 22,
+      "ABSTAIN": 8
+    },
+    "4": {
+      "ACCEPT": 10,
+      "REJECT": 22,
+      "ABSTAIN": 8
+    },
+    "5": {
+      "ACCEPT": 10,
+      "REJECT": 22,
+      "ABSTAIN": 8
+    }
+  },
+  "sensitivity_is_observed_subset_only": false,
+  "latency_including_failures_ms": {
+    "median": 2679.233,
+    "p95": 5986.095949999998
+  }
+}

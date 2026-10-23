@@ -1,0 +1,49 @@
+{
+  "title": "Multi-Agent LLM Validation With Deterministic Risk Guardrails for XAU/USD Trading Signals: primary fixed-artifact reproduction",
+  "kind": "Primary historical reproduction archive",
+  "version": "audit-prepared-20261023",
+  "historical_cases": 40,
+  "historical_attempts": 160,
+  "historical_valid": 157,
+  "historical_FAILED": 3,
+  "primary_condition_decisions": {
+    "B0": [
+      40,
+      0,
+      0
+    ],
+    "B1": [
+      19,
+      19,
+      2
+    ],
+    "B2": [
+      21,
+      18,
+      1
+    ],
+    "P": [
+      10,
+      22,
+      8
+    ],
+    "rule_only": [
+      12,
+      22,
+      6
+    ]
+  },
+  "decision_order": [
+    "ACCEPT",
+    "REJECT",
+    "ABSTAIN"
+  ],
+  "known_receipt_tokens": 83450,
+  "publication_state": "GITHUB_REPOSITORY_DEPOSIT",
+  "DOI": null,
+  "repository_URL": "https://github.com/LeviedanX/xauusd-llm-guardrails-reproduction",
+  "license": "NOT_ASSIGNED_BY_PREPARATION_WORKFLOW",
+  "creators": null,
+  "creator_metadata_status": "Not assigned by archive preparation; no authorship or coauthor approval inferred",
+  "independent_reviewer_result": "NOT_AVAILABLE"
+}

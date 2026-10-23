@@ -1,0 +1,77 @@
+{
+  "job_id": "m77.m71-own-170.r1.B1.technical_validation",
+  "candidate_id": "m71-own-170",
+  "condition": "B1",
+  "role_id": "technical_validation",
+  "repetition": 1,
+  "input_sha256": "c2bfcdb043f7f92c09c7df524db9ba9e620cf3a81f50d2b135f5f12face77a11",
+  "prompt_sha256": "d7b4ccc01ab8d81beb379b6b3d4089a4f0bde0d9e016fed4cefca115507a39fa",
+  "receipt": {
+    "schema": 1,
+    "status": "SUCCESS",
+    "reason": null,
+    "profile_id": "llm_e752725270bc42acb96749a3f94fa269",
+    "model_id": "gemini-3.5-flash-lite",
+    "release_sha256": "1625c8cca58e17f271626741eeefb9fcdf775c31d707e68dca8cea98713dffea",
+    "attempts": [
+      {
+        "client_request_id": "mx-336208f430714d9ca222451f9546d4cf",
+        "attempt": 1,
+        "reserved_usd_micros": 0,
+        "http_status": 200,
+        "usage": {
+          "input_tokens": 421,
+          "output_tokens_including_thinking": 142,
+          "total_tokens": 563
+        },
+        "provider_request_id": null,
+        "status": "RESPONSE_VALIDATED",
+        "cost_ceiling_usd_micros": 0
+      }
+    ],
+    "billing_reconciled": false,
+    "cost_semantics": "OWNER_ATTESTED_FREE_TIER_NOT_PROVIDER_BILLING_PROOF",
+    "cost_mode": "FREE_TIER_ONLY",
+    "advisory_only": true,
+    "order_authority": "NONE",
+    "empirical_admission": false,
+    "response": {
+      "text": "{\n  \"evidence_references\": [\n    \"own-native-calculator\",\n    \"own-technical-feature\",\n    \"own-fictional-macro\"\n  ],\n  \"rationale_summary\": \"Margin exceeds free equity, and loss-to-equity ratio violates the 5pct limit.\",\n  \"reason_codes\": [\n    \"HARD_RISK_CONSTRAINT_VIOLATION\"\n  ],\n  \"risk_veto\": true,\n  \"role\": \"technical_validation\",\n  \"verdict\": \"REJECT\",\n  \"veto_code\": \"HARD_RISK_LIMIT\"\n}",
+      "response_id": "WCDQasHHOsn6juMP5_WyuQY",
+      "provider_request_id": null,
+      "model_id": "gemini-3.5-flash-lite",
+      "response_model_id": "gemini-3.5-flash-lite",
+      "upstream_provider_id": null,
+      "model_capture_semantics": "VALIDATED_PROVIDER_FIELD_NOT_WEIGHT_IDENTITY",
+      "usage": {
+        "input_tokens": 421,
+        "output_tokens_including_thinking": 142,
+        "total_tokens": 563
+      },
+      "cost_ceiling_usd_micros": 0
+    }
+  },
+  "semantic": {
+    "status": "VALID",
+    "value": {
+      "evidence_references": [
+        "own-native-calculator",
+        "own-technical-feature",
+        "own-fictional-macro"
+      ],
+      "rationale_summary": "Margin exceeds free equity, and loss-to-equity ratio violates the 5pct limit.",
+      "reason_codes": [
+        "HARD_RISK_CONSTRAINT_VIOLATION"
+      ],
+      "risk_veto": true,
+      "role": "technical_validation",
+      "verdict": "REJECT",
+      "veto_code": "HARD_RISK_LIMIT"
+    }
+  },
+  "duration_ms": 5778.041,
+  "observed_at_utc": "2026-10-15T00:37:48.464732+00:00",
+  "actual_cost_usd": null,
+  "billing_reconciled": false,
+  "source_scope": "Exploratory fixed40 own synthetic cases, three roles sharing Gemini; no model diversity or market-performance claim"
+}

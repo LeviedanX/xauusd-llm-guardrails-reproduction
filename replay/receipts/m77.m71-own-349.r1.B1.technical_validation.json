@@ -1,0 +1,77 @@
+{
+  "job_id": "m77.m71-own-349.r1.B1.technical_validation",
+  "candidate_id": "m71-own-349",
+  "condition": "B1",
+  "role_id": "technical_validation",
+  "repetition": 1,
+  "input_sha256": "6206f337ebb775fbf8a7e100df2e405fe1ead049f24bd8e18f6e9c154954090e",
+  "prompt_sha256": "2b9fd9ce48d0203f2c4cd8442af3f57dde80e0d3e0c4b21531d72609eb9a877c",
+  "receipt": {
+    "schema": 1,
+    "status": "SUCCESS",
+    "reason": null,
+    "profile_id": "llm_e752725270bc42acb96749a3f94fa269",
+    "model_id": "gemini-3.5-flash-lite",
+    "release_sha256": "1625c8cca58e17f271626741eeefb9fcdf775c31d707e68dca8cea98713dffea",
+    "attempts": [
+      {
+        "client_request_id": "mx-be00da5104de451585c33f6ab383f8b9",
+        "attempt": 1,
+        "reserved_usd_micros": 0,
+        "http_status": 200,
+        "usage": {
+          "input_tokens": 420,
+          "output_tokens_including_thinking": 134,
+          "total_tokens": 554
+        },
+        "provider_request_id": null,
+        "status": "RESPONSE_VALIDATED",
+        "cost_ceiling_usd_micros": 0
+      }
+    ],
+    "billing_reconciled": false,
+    "cost_semantics": "OWNER_ATTESTED_FREE_TIER_NOT_PROVIDER_BILLING_PROOF",
+    "cost_mode": "FREE_TIER_ONLY",
+    "advisory_only": true,
+    "order_authority": "NONE",
+    "empirical_admission": false,
+    "response": {
+      "text": "{\n  \"evidence_references\": [\n    \"own-native-calculator\",\n    \"own-technical-feature\",\n    \"own-fictional-macro\"\n  ],\n  \"rationale_summary\": \"Lot below min allowed. REJECT per size rules.\",\n  \"reason_codes\": [\n    \"HARD_RISK_CONSTRAINT_VIOLATION\"\n  ],\n  \"risk_veto\": true,\n  \"role\": \"technical_validation\",\n  \"verdict\": \"REJECT\",\n  \"veto_code\": \"HARD_RISK_LIMIT\"\n}",
+      "response_id": "cyHQat_qE_zEg8UP2tah6Q0",
+      "provider_request_id": null,
+      "model_id": "gemini-3.5-flash-lite",
+      "response_model_id": "gemini-3.5-flash-lite",
+      "upstream_provider_id": null,
+      "model_capture_semantics": "VALIDATED_PROVIDER_FIELD_NOT_WEIGHT_IDENTITY",
+      "usage": {
+        "input_tokens": 420,
+        "output_tokens_including_thinking": 134,
+        "total_tokens": 554
+      },
+      "cost_ceiling_usd_micros": 0
+    }
+  },
+  "semantic": {
+    "status": "VALID",
+    "value": {
+      "evidence_references": [
+        "own-native-calculator",
+        "own-technical-feature",
+        "own-fictional-macro"
+      ],
+      "rationale_summary": "Lot below min allowed. REJECT per size rules.",
+      "reason_codes": [
+        "HARD_RISK_CONSTRAINT_VIOLATION"
+      ],
+      "risk_veto": true,
+      "role": "technical_validation",
+      "verdict": "REJECT",
+      "veto_code": "HARD_RISK_LIMIT"
+    }
+  },
+  "duration_ms": 4811.08,
+  "observed_at_utc": "2026-10-15T00:42:29.879760+00:00",
+  "actual_cost_usd": null,
+  "billing_reconciled": false,
+  "source_scope": "Exploratory fixed40 own synthetic cases, three roles sharing Gemini; no model diversity or market-performance claim"
+}

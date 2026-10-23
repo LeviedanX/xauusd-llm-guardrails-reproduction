@@ -1,0 +1,77 @@
+{
+  "job_id": "m77.m71-own-233.r1.B1.technical_validation",
+  "candidate_id": "m71-own-233",
+  "condition": "B1",
+  "role_id": "technical_validation",
+  "repetition": 1,
+  "input_sha256": "4519ea52dbe8aba6195506be2f77285e9546cc2f061a817be4ad1f58a6a4b9a4",
+  "prompt_sha256": "bdc5044ae7941b36f7d39d2d6bcfcef377cc504fa8ba5d2a72aede66539216d7",
+  "receipt": {
+    "schema": 1,
+    "status": "SUCCESS",
+    "reason": null,
+    "profile_id": "llm_e752725270bc42acb96749a3f94fa269",
+    "model_id": "gemini-3.5-flash-lite",
+    "release_sha256": "1625c8cca58e17f271626741eeefb9fcdf775c31d707e68dca8cea98713dffea",
+    "attempts": [
+      {
+        "client_request_id": "mx-be5a1c5cd5a24719b9ab4deeeb7be125",
+        "attempt": 1,
+        "reserved_usd_micros": 0,
+        "http_status": 200,
+        "usage": {
+          "input_tokens": 421,
+          "output_tokens_including_thinking": 83,
+          "total_tokens": 504
+        },
+        "provider_request_id": null,
+        "status": "RESPONSE_VALIDATED",
+        "cost_ceiling_usd_micros": 0
+      }
+    ],
+    "billing_reconciled": false,
+    "cost_semantics": "OWNER_ATTESTED_FREE_TIER_NOT_PROVIDER_BILLING_PROOF",
+    "cost_mode": "FREE_TIER_ONLY",
+    "advisory_only": true,
+    "order_authority": "NONE",
+    "empirical_admission": false,
+    "response": {
+      "text": "{\"evidence_references\":[\"own-native-calculator\",\"own-technical-feature\",\"own-fictional-macro\"],\"rationale_summary\":\"Geometry flag zero indicates structural stop validation failure.\",\"reason_codes\":[\"HARD_RISK_CONSTRAINT_VIOLATION\"],\"risk_veto\":true,\"role\":\"technical_validation\",\"verdict\":\"REJECT\",\"veto_code\":\"INVALID_STOP\"}",
+      "response_id": "wCDQataEAsDo4-EPjd6AiA4",
+      "provider_request_id": null,
+      "model_id": "gemini-3.5-flash-lite",
+      "response_model_id": "gemini-3.5-flash-lite",
+      "upstream_provider_id": null,
+      "model_capture_semantics": "VALIDATED_PROVIDER_FIELD_NOT_WEIGHT_IDENTITY",
+      "usage": {
+        "input_tokens": 421,
+        "output_tokens_including_thinking": 83,
+        "total_tokens": 504
+      },
+      "cost_ceiling_usd_micros": 0
+    }
+  },
+  "semantic": {
+    "status": "VALID",
+    "value": {
+      "evidence_references": [
+        "own-native-calculator",
+        "own-technical-feature",
+        "own-fictional-macro"
+      ],
+      "rationale_summary": "Geometry flag zero indicates structural stop validation failure.",
+      "reason_codes": [
+        "HARD_RISK_CONSTRAINT_VIOLATION"
+      ],
+      "risk_veto": true,
+      "role": "technical_validation",
+      "verdict": "REJECT",
+      "veto_code": "INVALID_STOP"
+    }
+  },
+  "duration_ms": 5860.09,
+  "observed_at_utc": "2026-10-15T00:39:31.674957+00:00",
+  "actual_cost_usd": null,
+  "billing_reconciled": false,
+  "source_scope": "Exploratory fixed40 own synthetic cases, three roles sharing Gemini; no model diversity or market-performance claim"
+}

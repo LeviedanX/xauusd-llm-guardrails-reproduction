@@ -1,0 +1,49 @@
+{
+  "id": "maestro-x-gemini-three-role-main-m77",
+  "frozen_at_utc": "2026-10-15T00:33:29.490940+00:00",
+  "new_calls_before_freeze": 0,
+  "inherited_macro_calls_before_freeze": 40,
+  "post_macro_model_amendment_disclosed": true,
+  "files": [
+    {
+      "path": "evidence/gemini_main_m77/cohort.json",
+      "sha256": "e5b7c692e51e1ef3326a6b6d8e6c5120673fad5a38fca00df6cd2ea577a838ff"
+    },
+    {
+      "path": "evidence/gemini_main_m77/B0.json",
+      "sha256": "f7dd7a8e1cbaf180920904789f4383f13797f14427cfb3c40b68b19e20a2c366"
+    },
+    {
+      "path": "evidence/gemini_main_m77/plan.json",
+      "sha256": "7b4d8a74d6fa0e069cb45df87c7353bf713acd89d12867a758892b67aaf21cdd"
+    },
+    {
+      "path": "evidence/gemini_main_m77/jobs.json",
+      "sha256": "82de1e8c0a243581cd0a9763d859c7d5e76ed4914d3fc7640b5fe195b891e1a7"
+    },
+    {
+      "path": "evidence/gemini_main_m77/capacity.json",
+      "sha256": "740f2f79bb00465fad1de5c10576080a58ed3f041bdf14112d6143e8470e406d"
+    },
+    {
+      "path": "evidence/gemini_main_m77/validation.json",
+      "sha256": "212c95a054dd42d44c93dcfd73784db177e1a7f90c6b0cd7e3d68bbcd6425f61"
+    },
+    {
+      "path": "evidence/gemini_main_m77/PERFECTION-before-M77.md",
+      "sha256": "1a5a53659bbee7f99cba9d0eb5ea1156a3d7033a6a8ef1bdb30be9e14c2b5ff3"
+    },
+    {
+      "path": "scripts/gemini_main_m77.py",
+      "sha256": "89b5de164ed100c497876dca36d98f2cd8bb6e3a2af1c54ea099766d72673d74"
+    },
+    {
+      "path": "scripts/analyze_gemini_main_m77.py",
+      "sha256": "5a5c583cb188ddad0ab89dadacc8df1b822e20546697e187147523f7a3bfe211"
+    },
+    {
+      "path": "scripts/test_gemini_main_m77.py",
+      "sha256": "5dd7eea3758c65b16beb9f5b39cd9b8da71b67353dab7bf2ce6e494c4b0b817e"
+    }
+  ]
+}

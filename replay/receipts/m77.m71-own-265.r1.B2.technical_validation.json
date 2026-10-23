@@ -1,0 +1,43 @@
+{
+  "job_id": "m77.m71-own-265.r1.B2.technical_validation",
+  "candidate_id": "m71-own-265",
+  "condition": "B2",
+  "role_id": "technical_validation",
+  "repetition": 1,
+  "input_sha256": "14b0396e00915a946a249d86a33b45bed8aa155a2125728cd2bd411e28e46f86",
+  "prompt_sha256": "5560bb1d8b2849baa3c4bfddd86c9a077717fcaac46f567ceea40100560e936e",
+  "receipt": {
+    "schema": 1,
+    "status": "FAILED",
+    "reason": "RESPONSE_REJECTED",
+    "profile_id": "llm_e752725270bc42acb96749a3f94fa269",
+    "model_id": "gemini-3.5-flash-lite",
+    "release_sha256": "1625c8cca58e17f271626741eeefb9fcdf775c31d707e68dca8cea98713dffea",
+    "attempts": [
+      {
+        "client_request_id": "mx-f987b5e9d3aa46279ed3f8718406f20a",
+        "attempt": 1,
+        "reserved_usd_micros": 0,
+        "http_status": 200,
+        "usage": null,
+        "provider_request_id": null,
+        "status": "RESPONSE_REJECTED"
+      }
+    ],
+    "billing_reconciled": false,
+    "cost_semantics": "OWNER_ATTESTED_FREE_TIER_NOT_PROVIDER_BILLING_PROOF",
+    "cost_mode": "FREE_TIER_ONLY",
+    "advisory_only": true,
+    "order_authority": "NONE",
+    "empirical_admission": false
+  },
+  "semantic": {
+    "status": "FAILED",
+    "value": null
+  },
+  "duration_ms": 7451.656,
+  "observed_at_utc": "2026-10-15T00:40:32.630757+00:00",
+  "actual_cost_usd": null,
+  "billing_reconciled": false,
+  "source_scope": "Exploratory fixed40 own synthetic cases, three roles sharing Gemini; no model diversity or market-performance claim"
+}

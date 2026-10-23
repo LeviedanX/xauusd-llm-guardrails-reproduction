@@ -1,0 +1,78 @@
+{
+  "job_id": "m75.m71-own-265.r1.B2.macro_news_validation",
+  "candidate_id": "m71-own-265",
+  "condition": "B2",
+  "role_id": "macro_news_validation",
+  "repetition": 1,
+  "input_sha256": "14b0396e00915a946a249d86a33b45bed8aa155a2125728cd2bd411e28e46f86",
+  "prompt_sha256": "ed8cc25061773c79c8720de3065b9111daca99876d9c52ec3e533fd767f72327",
+  "receipt": {
+    "schema": 1,
+    "status": "SUCCESS",
+    "reason": null,
+    "profile_id": "llm_e752725270bc42acb96749a3f94fa269",
+    "model_id": "gemini-3.5-flash-lite",
+    "release_sha256": "1625c8cca58e17f271626741eeefb9fcdf775c31d707e68dca8cea98713dffea",
+    "attempts": [
+      {
+        "client_request_id": "mx-70f3e97a220a43d3a8a2879aa3af36bf",
+        "attempt": 1,
+        "reserved_usd_micros": 0,
+        "http_status": 200,
+        "usage": {
+          "input_tokens": 422,
+          "output_tokens_including_thinking": 123,
+          "total_tokens": 545
+        },
+        "provider_request_id": null,
+        "status": "RESPONSE_VALIDATED",
+        "cost_ceiling_usd_micros": 0
+      }
+    ],
+    "billing_reconciled": false,
+    "cost_semantics": "OWNER_ATTESTED_FREE_TIER_NOT_PROVIDER_BILLING_PROOF",
+    "cost_mode": "FREE_TIER_ONLY",
+    "advisory_only": true,
+    "order_authority": "NONE",
+    "empirical_admission": false,
+    "response": {
+      "text": "{\n  \"evidence_references\": [\n    \"own-native-calculator\",\n    \"own-technical-feature\",\n    \"own-fictional-macro\"\n  ],\n  \"rationale_summary\": \"All calculated metrics and risk parameters pass validation checks successfully.\",\n  \"reason_codes\": [\n    \"VALID_SIGNAL\"\n  ],\n  \"risk_veto\": false,\n  \"role\": \"macro_news_validation\",\n  \"verdict\": \"ACCEPT\",\n  \"veto_code\": \"NONE\"\n}",
+      "response_id": "3hjQaourJ7nEg8UPsay48Q0",
+      "provider_request_id": null,
+      "model_id": "gemini-3.5-flash-lite",
+      "response_model_id": "gemini-3.5-flash-lite",
+      "upstream_provider_id": null,
+      "model_capture_semantics": "VALIDATED_PROVIDER_FIELD_NOT_WEIGHT_IDENTITY",
+      "usage": {
+        "input_tokens": 422,
+        "output_tokens_including_thinking": 123,
+        "total_tokens": 545
+      },
+      "cost_ceiling_usd_micros": 0
+    }
+  },
+  "semantic": {
+    "status": "VALID",
+    "value": {
+      "evidence_references": [
+        "own-native-calculator",
+        "own-technical-feature",
+        "own-fictional-macro"
+      ],
+      "rationale_summary": "All calculated metrics and risk parameters pass validation checks successfully.",
+      "reason_codes": [
+        "VALID_SIGNAL"
+      ],
+      "risk_veto": false,
+      "role": "macro_news_validation",
+      "verdict": "ACCEPT",
+      "veto_code": "NONE"
+    }
+  },
+  "dispatch_sequence": 27,
+  "duration_ms": 5121.86,
+  "observed_at_utc": "2026-10-15T00:05:53.961661+00:00",
+  "actual_cost_usd": null,
+  "billing_reconciled": false,
+  "source_scope": "Exploratory fixed forty-case owned synthetic benchmark; no population-market or full400 inference"
+}

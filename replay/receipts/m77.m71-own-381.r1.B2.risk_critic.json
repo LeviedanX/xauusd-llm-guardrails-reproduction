@@ -1,0 +1,48 @@
+{
+  "job_id": "m77.m71-own-381.r1.B2.risk_critic",
+  "candidate_id": "m71-own-381",
+  "condition": "B2",
+  "role_id": "risk_critic",
+  "repetition": 1,
+  "input_sha256": "a8af93f465cc7f018143b53154e7d41c0bea926dd2563e4451ea00f3969b391b",
+  "prompt_sha256": "77b5d74592a720c2de214708f81f1221a480e9a8a8a1d3ad362b67d430d3bfd8",
+  "receipt": {
+    "schema": 1,
+    "status": "FAILED",
+    "reason": "SERVER_UNAVAILABLE",
+    "profile_id": "llm_e752725270bc42acb96749a3f94fa269",
+    "model_id": "gemini-3.5-flash-lite",
+    "release_sha256": "1625c8cca58e17f271626741eeefb9fcdf775c31d707e68dca8cea98713dffea",
+    "attempts": [
+      {
+        "client_request_id": "mx-04bdcb28913240ffb526a75e2ab2eecb",
+        "attempt": 1,
+        "reserved_usd_micros": 0,
+        "http_status": 503,
+        "usage": null,
+        "provider_request_id": null,
+        "provider_error": {
+          "category": "UNCLASSIFIED_PROVIDER_ERROR",
+          "code": null,
+          "type": null
+        },
+        "status": "SERVER_UNAVAILABLE"
+      }
+    ],
+    "billing_reconciled": false,
+    "cost_semantics": "OWNER_ATTESTED_FREE_TIER_NOT_PROVIDER_BILLING_PROOF",
+    "cost_mode": "FREE_TIER_ONLY",
+    "advisory_only": true,
+    "order_authority": "NONE",
+    "empirical_admission": false
+  },
+  "semantic": {
+    "status": "FAILED",
+    "value": null
+  },
+  "duration_ms": 1625.293,
+  "observed_at_utc": "2026-10-15T00:43:44.668357+00:00",
+  "actual_cost_usd": null,
+  "billing_reconciled": false,
+  "source_scope": "Exploratory fixed40 own synthetic cases, three roles sharing Gemini; no model diversity or market-performance claim"
+}

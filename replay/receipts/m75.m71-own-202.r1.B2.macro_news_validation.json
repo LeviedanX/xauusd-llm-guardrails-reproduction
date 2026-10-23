@@ -1,0 +1,78 @@
+{
+  "job_id": "m75.m71-own-202.r1.B2.macro_news_validation",
+  "candidate_id": "m71-own-202",
+  "condition": "B2",
+  "role_id": "macro_news_validation",
+  "repetition": 1,
+  "input_sha256": "9042a58de196222b7af363e8903d58e2e6442ab623cb3927530a12b334c7ec6d",
+  "prompt_sha256": "0791e9bc8f561316d679ecf03724c5f25a4fa69ed39845ef72411c9394ef4cb5",
+  "receipt": {
+    "schema": 1,
+    "status": "SUCCESS",
+    "reason": null,
+    "profile_id": "llm_e752725270bc42acb96749a3f94fa269",
+    "model_id": "gemini-3.5-flash-lite",
+    "release_sha256": "1625c8cca58e17f271626741eeefb9fcdf775c31d707e68dca8cea98713dffea",
+    "attempts": [
+      {
+        "client_request_id": "mx-a7a2547424444099806e348187328477",
+        "attempt": 1,
+        "reserved_usd_micros": 0,
+        "http_status": 200,
+        "usage": {
+          "input_tokens": 417,
+          "output_tokens_including_thinking": 89,
+          "total_tokens": 506
+        },
+        "provider_request_id": null,
+        "status": "RESPONSE_VALIDATED",
+        "cost_ceiling_usd_micros": 0
+      }
+    ],
+    "billing_reconciled": false,
+    "cost_semantics": "OWNER_ATTESTED_FREE_TIER_NOT_PROVIDER_BILLING_PROOF",
+    "cost_mode": "FREE_TIER_ONLY",
+    "advisory_only": true,
+    "order_authority": "NONE",
+    "empirical_admission": false,
+    "response": {
+      "text": "{\"evidence_references\": [\"own-native-calculator\", \"own-technical-feature\", \"own-fictional-macro\"], \"rationale_summary\": \"All checks passed successfully; macro and calculations verified.\", \"reason_codes\": [\"VALID_SIGNAL\"], \"risk_veto\": false, \"role\": \"macro_news_validation\", \"verdict\": \"ACCEPT\", \"veto_code\": \"NONE\"}",
+      "response_id": "uxjQasWnBp7Cg8UPp5XVqQM",
+      "provider_request_id": null,
+      "model_id": "gemini-3.5-flash-lite",
+      "response_model_id": "gemini-3.5-flash-lite",
+      "upstream_provider_id": null,
+      "model_capture_semantics": "VALIDATED_PROVIDER_FIELD_NOT_WEIGHT_IDENTITY",
+      "usage": {
+        "input_tokens": 417,
+        "output_tokens_including_thinking": 89,
+        "total_tokens": 506
+      },
+      "cost_ceiling_usd_micros": 0
+    }
+  },
+  "semantic": {
+    "status": "VALID",
+    "value": {
+      "evidence_references": [
+        "own-native-calculator",
+        "own-technical-feature",
+        "own-fictional-macro"
+      ],
+      "rationale_summary": "All checks passed successfully; macro and calculations verified.",
+      "reason_codes": [
+        "VALID_SIGNAL"
+      ],
+      "risk_veto": false,
+      "role": "macro_news_validation",
+      "verdict": "ACCEPT",
+      "veto_code": "NONE"
+    }
+  },
+  "dispatch_sequence": 21,
+  "duration_ms": 5030.37,
+  "observed_at_utc": "2026-10-15T00:05:18.272099+00:00",
+  "actual_cost_usd": null,
+  "billing_reconciled": false,
+  "source_scope": "Exploratory fixed forty-case owned synthetic benchmark; no population-market or full400 inference"
+}

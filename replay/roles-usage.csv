@@ -1,0 +1,4 @@
+role,observed_attempts,ACCEPT,REJECT,ABSTAIN,FAILED,known_tokens,unknown_usage_attempts
+technical_validation,80,39,37,3,1,41963,1
+risk_critic,40,18,20,1,1,20517,1
+macro_news_validation,40,21,16,2,1,20970,1

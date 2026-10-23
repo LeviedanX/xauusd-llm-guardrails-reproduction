@@ -1,0 +1,130 @@
+{
+  "$defs": {
+    "identifier": {
+      "maxLength": 128,
+      "minLength": 1,
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._:-]*$",
+      "type": "string"
+    },
+    "reasonCode": {
+      "enum": [
+        "VALID_SIGNAL",
+        "SCHEMA_INVALID",
+        "IDENTITY_HASH_MISMATCH",
+        "MISSING_REQUIRED_EVIDENCE",
+        "STALE_EVIDENCE",
+        "FUTURE_DATED_EVIDENCE",
+        "HARD_RISK_CONSTRAINT_VIOLATION",
+        "RISK_CONCERN",
+        "INSUFFICIENT_INFORMATION"
+      ]
+    },
+    "sha256": {
+      "pattern": "^[a-f0-9]{64}$",
+      "type": "string"
+    }
+  },
+  "$id": "urn:maestro-x:draft:m51:semantic-response:1.0.0",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "else": {
+        "properties": {
+          "veto_code": {
+            "enum": [
+              "MISSING_STOP",
+              "INVALID_STOP",
+              "HARD_RISK_LIMIT",
+              "EVIDENCE_UNVERIFIABLE",
+              "FUTURE_EVIDENCE",
+              "POLICY_MISMATCH"
+            ]
+          }
+        }
+      },
+      "if": {
+        "properties": {
+          "risk_veto": {
+            "const": false
+          }
+        },
+        "required": [
+          "risk_veto"
+        ]
+      },
+      "then": {
+        "properties": {
+          "veto_code": {
+            "const": "NONE"
+          }
+        }
+      }
+    }
+  ],
+  "description": "Constrained agent output without chain-of-thought. Critical disposition is encoded only by closed verdict, reason-code, and veto-code enums.",
+  "properties": {
+    "evidence_references": {
+      "items": {
+        "$ref": "#/$defs/identifier"
+      },
+      "maxItems": 64,
+      "minItems": 1,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "rationale_summary": {
+      "maxLength": 1000,
+      "minLength": 1,
+      "type": "string"
+    },
+    "reason_codes": {
+      "items": {
+        "$ref": "#/$defs/reasonCode"
+      },
+      "maxItems": 8,
+      "minItems": 1,
+      "type": "array",
+      "uniqueItems": true
+    },
+    "risk_veto": {
+      "type": "boolean"
+    },
+    "role": {
+      "enum": [
+        "technical_validation",
+        "macro_news_validation",
+        "risk_critic"
+      ]
+    },
+    "verdict": {
+      "enum": [
+        "ACCEPT",
+        "REJECT",
+        "ABSTAIN"
+      ]
+    },
+    "veto_code": {
+      "enum": [
+        "NONE",
+        "MISSING_STOP",
+        "INVALID_STOP",
+        "HARD_RISK_LIMIT",
+        "EVIDENCE_UNVERIFIABLE",
+        "FUTURE_EVIDENCE",
+        "POLICY_MISMATCH"
+      ]
+    }
+  },
+  "required": [
+    "role",
+    "verdict",
+    "reason_codes",
+    "evidence_references",
+    "risk_veto",
+    "veto_code",
+    "rationale_summary"
+  ],
+  "title": "M51 draft semantic response; capture identity belongs to Runtime envelope",
+  "type": "object"
+}

@@ -1,0 +1,77 @@
+{
+  "job_id": "m77.m71-own-181.r1.B2.risk_critic",
+  "candidate_id": "m71-own-181",
+  "condition": "B2",
+  "role_id": "risk_critic",
+  "repetition": 1,
+  "input_sha256": "137c863299fa8321dcb5f8b92269f385a60ee33d1c37bc09a1c2644313ee9cff",
+  "prompt_sha256": "3bc16716ba0cfb4c8288cb7ae6ae1d374227ee01da56c26860fce27d0b408be9",
+  "receipt": {
+    "schema": 1,
+    "status": "SUCCESS",
+    "reason": null,
+    "profile_id": "llm_e752725270bc42acb96749a3f94fa269",
+    "model_id": "gemini-3.5-flash-lite",
+    "release_sha256": "1625c8cca58e17f271626741eeefb9fcdf775c31d707e68dca8cea98713dffea",
+    "attempts": [
+      {
+        "client_request_id": "mx-195a1ca8dc9b430dbaae34621336dfba",
+        "attempt": 1,
+        "reserved_usd_micros": 0,
+        "http_status": 200,
+        "usage": {
+          "input_tokens": 419,
+          "output_tokens_including_thinking": 72,
+          "total_tokens": 491
+        },
+        "provider_request_id": null,
+        "status": "RESPONSE_VALIDATED",
+        "cost_ceiling_usd_micros": 0
+      }
+    ],
+    "billing_reconciled": false,
+    "cost_semantics": "OWNER_ATTESTED_FREE_TIER_NOT_PROVIDER_BILLING_PROOF",
+    "cost_mode": "FREE_TIER_ONLY",
+    "advisory_only": true,
+    "order_authority": "NONE",
+    "empirical_admission": false,
+    "response": {
+      "text": "{\"evidence_references\":[\"own-native-calculator\",\"own-technical-feature\",\"own-fictional-macro\"],\"rationale_summary\":\"All risk parameters are within acceptable limits.\",\"reason_codes\":[\"VALID_SIGNAL\"],\"risk_veto\":false,\"role\":\"risk_critic\",\"verdict\":\"ACCEPT\",\"veto_code\":\"NONE\"}",
+      "response_id": "cSDQaurnCZr54-EPjMvR6A0",
+      "provider_request_id": null,
+      "model_id": "gemini-3.5-flash-lite",
+      "response_model_id": "gemini-3.5-flash-lite",
+      "upstream_provider_id": null,
+      "model_capture_semantics": "VALIDATED_PROVIDER_FIELD_NOT_WEIGHT_IDENTITY",
+      "usage": {
+        "input_tokens": 419,
+        "output_tokens_including_thinking": 72,
+        "total_tokens": 491
+      },
+      "cost_ceiling_usd_micros": 0
+    }
+  },
+  "semantic": {
+    "status": "VALID",
+    "value": {
+      "evidence_references": [
+        "own-native-calculator",
+        "own-technical-feature",
+        "own-fictional-macro"
+      ],
+      "rationale_summary": "All risk parameters are within acceptable limits.",
+      "reason_codes": [
+        "VALID_SIGNAL"
+      ],
+      "risk_veto": false,
+      "role": "risk_critic",
+      "verdict": "ACCEPT",
+      "veto_code": "NONE"
+    }
+  },
+  "duration_ms": 4332.709,
+  "observed_at_utc": "2026-10-15T00:38:11.237836+00:00",
+  "actual_cost_usd": null,
+  "billing_reconciled": false,
+  "source_scope": "Exploratory fixed40 own synthetic cases, three roles sharing Gemini; no model diversity or market-performance claim"
+}

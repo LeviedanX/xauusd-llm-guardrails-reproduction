@@ -1,0 +1,78 @@
+{
+  "job_id": "m75.m71-own-286.r1.B2.macro_news_validation",
+  "candidate_id": "m71-own-286",
+  "condition": "B2",
+  "role_id": "macro_news_validation",
+  "repetition": 1,
+  "input_sha256": "e3fd13d25a7472b98efc41dbfb164b2b4792084cae146ec5bdfc98fd81357f2d",
+  "prompt_sha256": "fb7e8b396400da3730eebf87cd945a0577dbd0629e74b352f4b59bdf300dd11c",
+  "receipt": {
+    "schema": 1,
+    "status": "SUCCESS",
+    "reason": null,
+    "profile_id": "llm_e752725270bc42acb96749a3f94fa269",
+    "model_id": "gemini-3.5-flash-lite",
+    "release_sha256": "1625c8cca58e17f271626741eeefb9fcdf775c31d707e68dca8cea98713dffea",
+    "attempts": [
+      {
+        "client_request_id": "mx-0b2b86f0927846949134c784af9e33db",
+        "attempt": 1,
+        "reserved_usd_micros": 0,
+        "http_status": 200,
+        "usage": {
+          "input_tokens": 417,
+          "output_tokens_including_thinking": 134,
+          "total_tokens": 551
+        },
+        "provider_request_id": null,
+        "status": "RESPONSE_VALIDATED",
+        "cost_ceiling_usd_micros": 0
+      }
+    ],
+    "billing_reconciled": false,
+    "cost_semantics": "OWNER_ATTESTED_FREE_TIER_NOT_PROVIDER_BILLING_PROOF",
+    "cost_mode": "FREE_TIER_ONLY",
+    "advisory_only": true,
+    "order_authority": "NONE",
+    "empirical_admission": false,
+    "response": {
+      "text": "{\n  \"evidence_references\": [\n    \"own-native-calculator\",\n    \"own-technical-feature\",\n    \"own-fictional-macro\"\n  ],\n  \"rationale_summary\": \"Daily guard is triggered, requiring signal rejection.\",\n  \"reason_codes\": [\n    \"HARD_RISK_CONSTRAINT_VIOLATION\"\n  ],\n  \"risk_veto\": true,\n  \"role\": \"macro_news_validation\",\n  \"verdict\": \"REJECT\",\n  \"veto_code\": \"HARD_RISK_LIMIT\"\n}",
+      "response_id": "6hjQaoLPJpCsg8UPtc2X6Q0",
+      "provider_request_id": null,
+      "model_id": "gemini-3.5-flash-lite",
+      "response_model_id": "gemini-3.5-flash-lite",
+      "upstream_provider_id": null,
+      "model_capture_semantics": "VALIDATED_PROVIDER_FIELD_NOT_WEIGHT_IDENTITY",
+      "usage": {
+        "input_tokens": 417,
+        "output_tokens_including_thinking": 134,
+        "total_tokens": 551
+      },
+      "cost_ceiling_usd_micros": 0
+    }
+  },
+  "semantic": {
+    "status": "VALID",
+    "value": {
+      "evidence_references": [
+        "own-native-calculator",
+        "own-technical-feature",
+        "own-fictional-macro"
+      ],
+      "rationale_summary": "Daily guard is triggered, requiring signal rejection.",
+      "reason_codes": [
+        "HARD_RISK_CONSTRAINT_VIOLATION"
+      ],
+      "risk_veto": true,
+      "role": "macro_news_validation",
+      "verdict": "REJECT",
+      "veto_code": "HARD_RISK_LIMIT"
+    }
+  },
+  "dispatch_sequence": 29,
+  "duration_ms": 5785.43,
+  "observed_at_utc": "2026-10-15T00:06:06.514209+00:00",
+  "actual_cost_usd": null,
+  "billing_reconciled": false,
+  "source_scope": "Exploratory fixed forty-case owned synthetic benchmark; no population-market or full400 inference"
+}

@@ -1,0 +1,77 @@
+{
+  "job_id": "m77.m71-own-328.r1.B1.technical_validation",
+  "candidate_id": "m71-own-328",
+  "condition": "B1",
+  "role_id": "technical_validation",
+  "repetition": 1,
+  "input_sha256": "ea82b74eacd2da49fc723caead896545854c659fe8d980dbcc7bfa2fb5e53457",
+  "prompt_sha256": "4ec4b6d11454a42470069a672ffd7d4c8b2686d46e64a910db3c8e93eaa0adf0",
+  "receipt": {
+    "schema": 1,
+    "status": "SUCCESS",
+    "reason": null,
+    "profile_id": "llm_e752725270bc42acb96749a3f94fa269",
+    "model_id": "gemini-3.5-flash-lite",
+    "release_sha256": "1625c8cca58e17f271626741eeefb9fcdf775c31d707e68dca8cea98713dffea",
+    "attempts": [
+      {
+        "client_request_id": "mx-7bdb205d0ac84fb9837369154c583304",
+        "attempt": 1,
+        "reserved_usd_micros": 0,
+        "http_status": 200,
+        "usage": {
+          "input_tokens": 408,
+          "output_tokens_including_thinking": 140,
+          "total_tokens": 548
+        },
+        "provider_request_id": null,
+        "status": "RESPONSE_VALIDATED",
+        "cost_ceiling_usd_micros": 0
+      }
+    ],
+    "billing_reconciled": false,
+    "cost_semantics": "OWNER_ATTESTED_FREE_TIER_NOT_PROVIDER_BILLING_PROOF",
+    "cost_mode": "FREE_TIER_ONLY",
+    "advisory_only": true,
+    "order_authority": "NONE",
+    "empirical_admission": false,
+    "response": {
+      "text": "{\n  \"evidence_references\": [\n    \"own-native-calculator\",\n    \"own-technical-feature\",\n    \"own-fictional-macro\"\n  ],\n  \"rationale_summary\": \"Pct 6 exceeds limit 5 and risk ratio exceeds 0.05.\",\n  \"reason_codes\": [\n    \"HARD_RISK_CONSTRAINT_VIOLATION\"\n  ],\n  \"risk_veto\": true,\n  \"role\": \"technical_validation\",\n  \"verdict\": \"REJECT\",\n  \"veto_code\": \"HARD_RISK_LIMIT\"\n}",
+      "response_id": "WCHQaofMC-miqfkPg6iC-A4",
+      "provider_request_id": null,
+      "model_id": "gemini-3.5-flash-lite",
+      "response_model_id": "gemini-3.5-flash-lite",
+      "upstream_provider_id": null,
+      "model_capture_semantics": "VALIDATED_PROVIDER_FIELD_NOT_WEIGHT_IDENTITY",
+      "usage": {
+        "input_tokens": 408,
+        "output_tokens_including_thinking": 140,
+        "total_tokens": 548
+      },
+      "cost_ceiling_usd_micros": 0
+    }
+  },
+  "semantic": {
+    "status": "VALID",
+    "value": {
+      "evidence_references": [
+        "own-native-calculator",
+        "own-technical-feature",
+        "own-fictional-macro"
+      ],
+      "rationale_summary": "Pct 6 exceeds limit 5 and risk ratio exceeds 0.05.",
+      "reason_codes": [
+        "HARD_RISK_CONSTRAINT_VIOLATION"
+      ],
+      "risk_veto": true,
+      "role": "technical_validation",
+      "verdict": "REJECT",
+      "veto_code": "HARD_RISK_LIMIT"
+    }
+  },
+  "duration_ms": 4170.225,
+  "observed_at_utc": "2026-10-15T00:42:02.190134+00:00",
+  "actual_cost_usd": null,
+  "billing_reconciled": false,
+  "source_scope": "Exploratory fixed40 own synthetic cases, three roles sharing Gemini; no model diversity or market-performance claim"
+}

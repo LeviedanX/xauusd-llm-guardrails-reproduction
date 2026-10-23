@@ -1,0 +1,5 @@
+condition,cases,ACCEPT,REJECT,ABSTAIN,FAILED,known_invalid_ACCEPT,unknown_label_ACCEPT
+B0,40,40,0,0,0,22,6
+B1,40,19,19,2,0,3,4
+B2,40,21,18,1,0,6,5
+P,40,10,22,8,0,0,0
