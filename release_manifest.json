@@ -3,14 +3,39 @@
   "scope": "PRIMARY_HISTORICAL_REPLAY_ONLY",
   "files": [
     {
+      "path": ".gitignore",
+      "bytes": 661,
+      "sha256": "106784f7cf37b2c56d4ab4d700a195348d2ff3909ee2128cf872e51129959014"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4624,
+      "sha256": "025759fa483cf733ab8d545731828860d5f40a532fe8bacfbad799326466e217"
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 1298,
+      "sha256": "0d27119908e02a0f12b65fd5b533bb697577777a0788d7c47134b29ebdb61273"
+    },
+    {
       "path": "deposit_metadata.json",
       "bytes": 1166,
       "sha256": "4e6b10eb0a79c3ab193ba170191c903707accf95fcbc7c27c12a435f5f53a9ed"
     },
     {
-      "path": "README.md",
-      "bytes": 2035,
-      "sha256": "34dfc7dc38abe719d15310cb26a03673d1d4956b162e7fd9cc35a7fdf9715b73"
+      "path": "replay/NOTES.md",
+      "bytes": 919,
+      "sha256": "a2d664abcf60a90b4e8ab07e784f4813c7f4bb01a53ac3968f1608cea83838d2"
+    },
+    {
+      "path": "replay/PROTOCOL-AMENDMENT.md",
+      "bytes": 4892,
+      "sha256": "2e5381782e2f3308959b13fd80a3597c7833ee6e71f13a44b1c78ba8581938d4"
+    },
+    {
+      "path": "replay/README.md",
+      "bytes": 1966,
+      "sha256": "de6873db400b6a6da09b8026cb1ae46661bd788dd4c111cd0478489a9284302c"
     },
     {
       "path": "replay/conditions.csv",
@@ -46,21 +71,6 @@
       "path": "replay/manifest.json",
       "bytes": 33783,
       "sha256": "9349e94e162dae7207d3580f04b626c98126b3227d8d200a23bfe91b2cd9a844"
-    },
-    {
-      "path": "replay/NOTES.md",
-      "bytes": 919,
-      "sha256": "a2d664abcf60a90b4e8ab07e784f4813c7f4bb01a53ac3968f1608cea83838d2"
-    },
-    {
-      "path": "replay/PROTOCOL-AMENDMENT.md",
-      "bytes": 4892,
-      "sha256": "2e5381782e2f3308959b13fd80a3597c7833ee6e71f13a44b1c78ba8581938d4"
-    },
-    {
-      "path": "replay/README.md",
-      "bytes": 1966,
-      "sha256": "de6873db400b6a6da09b8026cb1ae46661bd788dd4c111cd0478489a9284302c"
     },
     {
       "path": "replay/receipts/m75.m71-own-002.r1.B2.macro_news_validation.json",
